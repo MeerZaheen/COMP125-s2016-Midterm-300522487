@@ -72,5 +72,56 @@
         }
     }
 
+    /**
+    * This function provides JavaScript code for the Contact page
+    * 
+    * @function Contact
+    * @returns {void}
+    */
+    function Contact() {
+        // create a reference for your form
+        var contactForm = document.getElementById("contactForm");
+        firstName = document.getElementById("firstName");
+        lastName = document.getElementById("lastName");
+        email = document.getElementById("email");
+        contactNumber = document.getElementById("contactNumber");
+        message = document.getElementById("yourMessage");
+
+        contactForm.addEventListener("submit", onFormSubmit);
+    }
+
+    if (contactForm) {
+        // event listener with inline anonymous event handler function once you click Send(Submit)
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            console.log("submitted"); // shows form input in console
+            showFormInput();
+            contactForm.reset();
+        });
+    }
+
+    /**
+     * This function shows the input from each form field
+     * on the console
+     * 
+     * @method showFormInput
+     * @return {void}
+     */
+    // event handler function
+    function showFormInput() {
+        console.log("++++++++++++++++++++++++++++++++");
+        console.log("First Name: " + firstName.value);
+        console.log("++++++++++++++++++++++++++++++++");
+        console.log("Last Name: " + lastName.value);
+        console.log("++++++++++++++++++++++++++++++++");
+        console.log("Email: " + email.value);
+        console.log("++++++++++++++++++++++++++++++++");
+        console.log("contactNumber: " + contactNumber.value);
+        console.log("++++++++++++++++++++++++++++++++");
+        console.log("message: " + message.value);
+        console.log("++++++++++++++++++++++++++++++++");
+    }
+
+
 })();
 
