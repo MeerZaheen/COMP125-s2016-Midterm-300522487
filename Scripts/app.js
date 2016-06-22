@@ -2,11 +2,11 @@
 * FileName: App.js
 *
 * @author Meer Zaheen Nazmul
-* @date june 5, 2016
+* @date june 22, 2016
 *
 * StudentID: 300522487
 * website: http://comp125-assignment2.azurewebsites.net/contact.html
-* @description: This file is the main javascript file for the website
+* @description: This is the Midterm for COMP125
 */
 // setup your IIFE (Immediately Invoked Function Expression)
 (function () {
@@ -61,6 +61,8 @@
     // Gavdos
     paragraphs[9] = "Near the more well-known Crete, Gavdos is the most southern island in Greece — and the most southern spot in Europe discounting the Canaries. Only accessible by ferry, the remote island has only about 50 permanent residents, and can feel like your private playground. Local legend has it that the island was the home of goddess Calypso, who kept Odysseus prisoner here. Today, a favorite tourist activity is to visit the spot believed to be her cave. Be warned, you won't find any luxury hotels here. While the romantically under-developed, super laid back island has a number of rooms for rent, those are limited, as the real draw here for many is the free, seaside camping."
 
+    // <---------------- END PARAGRAPHS DATA SECTION ------------>
+
     // check to see if paragraph one exists
     var paragraphElementLength = paragraphElements.length;
 
@@ -94,7 +96,7 @@
         // event listener with inline anonymous event handler function once you click Send(Submit)
         contactForm.addEventListener("submit", function (event) {
             event.preventDefault();
-            console.log("submitted"); // shows form input in console
+            console.log("Retrieved Information!"); // shows form input in console
             showFormInput();
             contactForm.reset();
         });
@@ -118,7 +120,7 @@
         console.log("++++++++++++++++++++++++++++++++");
         console.log("contactNumber: " + contactNumber.value);
         console.log("++++++++++++++++++++++++++++++++");
-        console.log("message: " + message.value);
+        console.log("Message: " + yourMessage.value);
         console.log("++++++++++++++++++++++++++++++++");
     }
 
