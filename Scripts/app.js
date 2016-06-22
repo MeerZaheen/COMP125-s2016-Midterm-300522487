@@ -10,7 +10,7 @@
 */
 // setup your IIFE (Immediately Invoked Function Expression)
 (function () {
-"use strict";
+    "use strict";
 
     // <---------------- PARAGRAPHS SECTION ------------>
     var paragraphElements = [];
@@ -32,9 +32,9 @@
     // <---------------- PARAGRAPHS DATA SECTION ------------>
 
     // index intro paragraph
-    paragraphs[0] = "Now is the time to travel to Greece. The country may be going through an economic crisis, but many travellers say that it hasn't impacted the experience of visiting. Plus, there may be some great deals." 
-    + " Greece has 1,400 islands, though only 230 of them are inhabited." 
-    + " And while everyone knows about Santorini and Mykonos, there are gorgeous lesser-known islands in Greece, too."
+    paragraphs[0] = "Now is the time to travel to Greece. The country may be going through an economic crisis, but many travellers say that it hasn't impacted the experience of visiting. Plus, there may be some great deals."
+        + " Greece has 1,400 islands, though only 230 of them are inhabited."
+        + " And while everyone knows about Santorini and Mykonos, there are gorgeous lesser-known islands in Greece, too."
 
     // Folegandros
     paragraphs[1] = "Folegandros is almost a Greek cliché, full of beautiful whitewashed houses with bright blue doors lining cobblestoned streets on steep cliffs. Rugged and remote, without chain hotels or package tours — not even a bank or ATM — and accessible only by ferry, the volcanic island boasts solitude in spades, secluded beaches, and incredible sunsets."
@@ -47,7 +47,7 @@
 
     // Amorgos
     paragraphs[4] = "Shipwrecks, sea caves and beautiful clear waters make Amorgos popular with snorkelers, but the mountainous island is the perfect compromise between unwinding and adventure, boasting beautiful beaches but also hiking, scuba diving and rock-climbing. One of the island's main attractions is the 11th-century cliffside monastery of Panayia Hozoviótissa, which is precariously carved into a cliff."
-    
+
     // Syros
     paragraphs[5] = "A favourite Athenian escape and former shipowners' vacation spot full of grand mansions, Syros is little known to foreigners. Famous for its neoclassical architecture and perfectly preserved heritage, its capital, Ermoupolis, was a 13th-century Venetian-built town and important trade and industrial centre, and boasts giant churches and beautiful villas, a stunning town hall, and labyrinthine streets and stairways."
 
@@ -75,6 +75,8 @@
             paragraphElements[index].innerHTML = paragraphs[index];
         }
     }
+
+    // <---------------- Contact PAGE section ------------>
 
     /**
     * This function provides JavaScript code for the Contact page
@@ -126,6 +128,8 @@
         console.log("++++++++++++++++++++++++++++++++");
     }
 
+    // <---------------- END CONTATC PAGE SECTION ------------>
+
     /**
      * This function Incorporate a Smooth Scrolling functionality that scrolls between the Main Content and Contact sections
      * 
@@ -134,16 +138,16 @@
      */
 
     // event handler function
-        var rowDiv = document.getElementsByClassName("row")[0];
+    var rowDiv = document.getElementsByClassName("row")[0];
 
-        var timer = 0;
-        var ycoord = 0;
+    var timer = 0;
+    var ycoord = 0;
 
-        var myTimer = window.setInterval(function () {
-            timer++;
-            ycoord += 200;
-            window.scrollTo(0, ycoord);
-        }, 200);
+    var myTimer = window.setInterval(function () {
+        timer++;
+        ycoord += 200;
+        window.scrollTo(0, ycoord);
+    }, 200);
 
 })();
 
