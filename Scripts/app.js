@@ -129,7 +129,6 @@
     }
 
     // <---------------- END CONTATC PAGE SECTION ------------>
-
     /**
      * This function Incorporate a Smooth Scrolling functionality that scrolls between the Main Content and Contact sections
      * 
@@ -138,16 +137,16 @@
      */
 
     // event handler function
-    var rowDiv = document.getElementsByClassName("row")[0];
+    //var rowDiv = document.getElementsByClassName("row")[0];
 
-    var timer = 0;
-    var ycoord = 0;
+    //var timer = 0;
+    //var ycoord = 0;
 
-    var myTimer = window.setInterval(function () {
-        timer++;
-        ycoord += 200;
-        window.scrollTo(0, ycoord);
-    }, 200);
+    //var myTimer = window.setInterval(function () {
+    //    timer++;
+    //    ycoord += 200;
+    //    window.scrollTo(0, ycoord);
+    //}, 200);
 
 })();
 
