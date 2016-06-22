@@ -5,7 +5,7 @@
 * @date june 22, 2016
 *
 * StudentID: 300522487
-* website: http://comp125-assignment2.azurewebsites.net/contact.html
+* website: http://comp125-s2016-midterm-300522487.azurewebsites.net/#MainTitle
 * @description: This is the Midterm for COMP125
 */
 // setup your IIFE (Immediately Invoked Function Expression)
@@ -32,7 +32,9 @@
     // <---------------- PARAGRAPHS DATA SECTION ------------>
 
     // index intro paragraph
-    paragraphs[0] = "Now is the time to travel to Greece. The country may be going through an economic crisis, but many travellers say that it hasn't impacted the experience of visiting. Plus, there may be some great deals." + " Greece has 1,400 islands, though only 230 of them are inhabited." + " And while everyone knows about Santorini and Mykonos, there are gorgeous lesser-known islands in Greece, too."
+    paragraphs[0] = "Now is the time to travel to Greece. The country may be going through an economic crisis, but many travellers say that it hasn't impacted the experience of visiting. Plus, there may be some great deals." 
+    + " Greece has 1,400 islands, though only 230 of them are inhabited." 
+    + " And while everyone knows about Santorini and Mykonos, there are gorgeous lesser-known islands in Greece, too."
 
     // Folegandros
     paragraphs[1] = "Folegandros is almost a Greek cliché, full of beautiful whitewashed houses with bright blue doors lining cobblestoned streets on steep cliffs. Rugged and remote, without chain hotels or package tours — not even a bank or ATM — and accessible only by ferry, the volcanic island boasts solitude in spades, secluded beaches, and incredible sunsets."
@@ -112,18 +114,36 @@
     // event handler function
     function showFormInput() {
         console.log("++++++++++++++++++++++++++++++++");
-        console.log("First Name: " + firstName.value);
+        console.log("+ First Name: " + firstName.value);
         console.log("++++++++++++++++++++++++++++++++");
-        console.log("Last Name: " + lastName.value);
+        console.log("+ Last Name: " + lastName.value);
         console.log("++++++++++++++++++++++++++++++++");
-        console.log("Email: " + email.value);
+        console.log("+ Email: " + email.value);
         console.log("++++++++++++++++++++++++++++++++");
-        console.log("contactNumber: " + contactNumber.value);
+        console.log("+ contactNumber: " + contactNumber.value);
         console.log("++++++++++++++++++++++++++++++++");
-        console.log("Message: " + yourMessage.value);
+        console.log("+ Message: " + yourMessage.value);
         console.log("++++++++++++++++++++++++++++++++");
     }
 
+    /**
+     * This function Incorporate a Smooth Scrolling functionality that scrolls between the Main Content and Contact sections
+     * 
+     * @method myTimer
+     * @return {void}
+     */
+
+    // event handler function
+        var rowDiv = document.getElementsByClassName("row")[0];
+
+        var timer = 0;
+        var ycoord = 0;
+
+        var myTimer = window.setInterval(function () {
+            timer++;
+            ycoord += 10;
+            window.scrollTo(0, ycoord);
+        }, 200);
 
 })();
 
