@@ -141,7 +141,7 @@
 
         var myTimer = window.setInterval(function () {
             timer++;
-            ycoord += 10;
+            ycoord += 200;
             window.scrollTo(0, ycoord);
         }, 200);
 
